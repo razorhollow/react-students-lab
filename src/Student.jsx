@@ -67,10 +67,12 @@ const Student = () => {
     <>
       <h1>Students</h1>
         {students.map(student => 
-        <div className='student-card' key={student.name}>
-          <h2>{student.name}</h2>
-          <p>{student.bio}</p>
-          <Score student={student}/>
+        <div className='card' key={student.name}>
+          <div className='card-body'>
+            <h2 className='card-title'>{student.name}</h2>
+            <p className='card-text'>{student.bio}</p>
+            <Score student={student}/>
+          </div>
         </div>
           )}
     </>
