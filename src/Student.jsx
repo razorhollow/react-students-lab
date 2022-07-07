@@ -65,7 +65,7 @@ const Student = () => {
 
   return (
     <>
-      <h2>Students</h2>
+      <h1>Students</h1>
         {students.map(student => 
         <div className='student-card' key={student.name}>
           <h2>{student.name}</h2>
